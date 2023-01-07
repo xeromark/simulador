@@ -1,4 +1,4 @@
-//const path = require('path');
+const path = require('path');
 
 const express = require('express');
 
@@ -13,15 +13,16 @@ app.use(require('./routes/index'));
 
 app.use('/public', express.static( 'public'));      //esto agrega todo lo que es css y js
 app.use('/generador.html', express.static( 'generador.html'));      //esto agrega todo lo que es css y js
+*/
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "../index.html"))
+    response.sendFile(path.resolve(__dirname , "./archives/index.html"))
 
 
 });
 
-*/
+
 
 const port = process.env.PORT || 4000
 
