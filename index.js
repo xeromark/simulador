@@ -22,8 +22,6 @@ app.use('/archives', express.static( 'archives'));      //esto agrega todo lo qu
 app.get('/' , (request, response) => {
 
     response.sendFile(path.resolve(__dirname , "./index.html"))
-    response.sendFile(path.resolve(__dirname , "./archives/tablaDisenio.css"))
-
 
 });
 const port = process.env.PORT || 4000;
