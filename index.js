@@ -9,7 +9,7 @@ const port = process.env.PORT || 4000;
 
 
 // Routes
-app.use(require('/src/routes/index'));
+//app.use(require('/src/routes/index'));
 
 
 app.listen(port);
