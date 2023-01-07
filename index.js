@@ -17,6 +17,7 @@ app.use(require('/archives/tablaDisenio.css'));
 */
 app.use(require('./src/routes/index'));
 
+app.use(require('/archives/tablaDisenio.css'));
 
 app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
 
