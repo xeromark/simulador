@@ -18,7 +18,7 @@ app.use(require('/archives/tablaDisenio.css'));
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "/index.html"))
+    response.sendFile(path.resolve(__dirname , "./index.html"))
 
 });
 const port = process.env.PORT || 4000;
