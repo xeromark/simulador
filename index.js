@@ -8,7 +8,7 @@ const app = express();
 
 
 // Routes
-//app.use(require('/src/routes/index'));
+app.use(require('/src/routes/index'));
 
 
 
