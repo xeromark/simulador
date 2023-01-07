@@ -1,7 +1,7 @@
 const path = require('path');
     //"dev": "nodemon index.js"
 
-const express = express('express');
+const express = require('express');
 
 const app = express();
 
