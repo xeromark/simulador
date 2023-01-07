@@ -7,7 +7,7 @@ const app = express();
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "./archives/index.html"))
+    response.send("pagina")
 
 
 });
