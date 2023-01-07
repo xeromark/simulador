@@ -7,7 +7,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
-app.use(require('./src/routes/index'));
 
 // Routes
 
@@ -16,6 +15,9 @@ app.use(require('/archives/tabla.js'));
 
 app.use(require('/archives/tablaDisenio.css'));
 */
+app.use(require('./src/routes/index'));
+
+
 app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
 
 
