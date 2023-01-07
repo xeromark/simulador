@@ -20,8 +20,8 @@ app.get('/' , (request, response) => {
 var router = express.Router();
 
 // Home page route
-router.get('/', function(req, res) {
-  res.send('Página de inicio Wiki');
-});
+var index = require('./archives/index.html');
+// ...
+app.use('/index', index);
 
-module.exports = router;
+module.exports = app;
