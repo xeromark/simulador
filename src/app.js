@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 
-
+/*
 
 app.get('/' , (request, response) => {
 
@@ -15,5 +15,10 @@ app.get('/' , (request, response) => {
 
 
 });
+*/
+
+app.get("/", (req, res) => {
+    res.render("./archives/index.html");
+  });
 
 module.exports = app;
