@@ -8,12 +8,13 @@ const app = express();
 
 
 // Routes
+/*
 app.use(require('/src/routes/index'));
 
 app.use(require('/archives/tabla.js'));
 
 app.use(require('/archives/tablaDisenio.css'));
-
+*/
 
 app.get('/' , (request, response) => {
 
