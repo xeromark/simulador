@@ -10,6 +10,7 @@ const app = express();
 // Routes
 app.use(require('/src/routes/index'));
 
+app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
 
 
 app.get('/' , (request, response) => {
