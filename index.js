@@ -9,15 +9,15 @@ app.use(express.urlencoded({extended: false}))
 
 
 // Routes
+app.use(require('/archives/tablaDisenio.css'));
 
+app.use(require('./src/routes/index'));
 
 app.use(require('/archives/tabla.js'));
 
 app.use(require('/archives/tablaDisenio.css'));
 */
-app.use(require('./src/routes/index'));
 
-app.use(require('/archives/tablaDisenio.css'));
 
 app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
 
