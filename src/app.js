@@ -17,8 +17,11 @@ app.get('/' , (request, response) => {
 });
 */
 
-app.get("/archives", (req, res) => {
-    res.render("index.html");
-  });
+var router = express.Router();
+
+// Home page route
+router.get('/', function(req, res) {
+  res.send('Página de inicio Wiki');
+});
 
 module.exports = app;
