@@ -1,3 +1,4 @@
+/*
 const path = require('path');
 
 const express = require('express');
@@ -15,7 +16,7 @@ app.get('/' , (request, response) => {
 
 
 });
- */
+
 
 var router = express.Router();
 
@@ -24,4 +25,4 @@ var index = require('./archives/index.html');
 // ...
 app.use('/index', index);
 
-module.exports = app;
+module.exports = app; */
