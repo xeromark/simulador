@@ -24,4 +24,4 @@ router.get('/', function(req, res) {
   res.send('Página de inicio Wiki');
 });
 
-module.exports = app;
+module.exports = router;
