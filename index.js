@@ -6,10 +6,10 @@ const app = express();
 
 
 
+app.use(require('/src/routes/index'));
 
 // Routes
 /*
-app.use(require('/src/routes/index'));
 
 app.use(require('/archives/tabla.js'));
 
