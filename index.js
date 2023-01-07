@@ -6,7 +6,7 @@ const app = express();
 
 
 
-app.use(require('/src/routes/index'));
+app.use(require('./src/routes/index'));
 
 // Routes
 /*
