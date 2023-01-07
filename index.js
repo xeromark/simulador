@@ -3,14 +3,14 @@ const path = require('path');
 const express = require('express');
 
 const app = express();
-
+/*
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 app.use(require('./src/routes/index'));
 
 // Routes
-/*
+
 
 app.use(require('/archives/tabla.js'));
 
@@ -22,6 +22,8 @@ app.use('/archives', express.static( 'archives'));      //esto agrega todo lo qu
 app.get('/' , (request, response) => {
 
     response.sendFile(path.resolve(__dirname , "./index.html"))
+    response.sendFile(path.resolve(__dirname , "./tablaDisenio.css"))
+
 
 });
 const port = process.env.PORT || 4000;
