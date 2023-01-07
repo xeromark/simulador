@@ -1,5 +1,7 @@
+const path = require('path');
 
-const app = require("./src/app");
+const app = express();
+
 /*
 // middlewares
 app.use(express.json());
@@ -14,6 +16,14 @@ app.use('/generador.html', express.static( 'generador.html'));      //esto agreg
 
 //app.use(require('./archives/public'));      //esto agrega todo lo que es css y js
 
+app.get('/' , (request, response) => {
+
+    //response.send("pagina")
+
+        response.sendFile(path.resolve(__dirname , "./archives/index.html"))
+
+
+});
 
 const port = process.env.PORT || 4000
 
