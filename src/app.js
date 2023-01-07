@@ -17,8 +17,8 @@ app.get('/' , (request, response) => {
 });
 */
 
-app.get("/", (req, res) => {
-    res.render("index.html");
+app.get("/archives", (req, res) => {
+    res.render("index");
   });
 
 module.exports = app;
