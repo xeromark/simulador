@@ -15,7 +15,7 @@ app.use('/public', express.static( 'public'));      //esto agrega todo lo que es
 app.use('/generador.html', express.static( 'generador.html'));      //esto agrega todo lo que es css y js
 */
 
-app.use('/public', express.static( 'public'));      //esto agrega todo lo que es css y js
+app.use('./archives/public', express.static( 'public'));      //esto agrega todo lo que es css y js
 
 
 app.get('/' , (request, response) => {
